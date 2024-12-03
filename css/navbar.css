@@ -1,0 +1,36 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  height: 139vh;
+}
+.nav-wrap{
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  /* padding-top:70px ; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.down{
+  display: none;
+}
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+.dropdown-list .dropdown-innerlist{
+  display: none;
+  flex-direction: column;
+}
+@media  (max-width: 1280px) {
+  .nav-wrap{
+    width: 1000px;
+  }
+}
