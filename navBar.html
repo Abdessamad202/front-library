@@ -1,147 +1,86 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="./css/navbar.css" />
-    <script src="./js/webflow.462a07c23.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
+<head>
+  <title>Responsive Navbar</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
 
-  <body>
-    <div class="container">
-      <div class="nav-wrap">
-        <div class="text-block-2">Library</div>
-        <nav role="navigation" class="nav-menu w-nav-menu">
-          <a href="/" aria-current="page" class="navlink w-nav-link w--current"
-            >Home</a
-          >
-          <div
-            data-w-id="75a7470d-2054-88ad-e9bc-e53c9e485c6b"
-            class="dropdownwrapper"
-          >
-            <div class="dropdownlink-container">
-              <div class="navlink">Categories</div>
-              <div class="down"><i class="fas fa-chevron-down"></i></div>
+<body>
+  <div class="nav-bar-a">
+    <div class="nav-wrap">
+      <div class="logo">AIBRARY</div>
+
+      <!-- Large Screen Nav -->
+      <nav class="large-screen">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <div class="drop-down">
+              <div class="title">Categories</div>
+              <i class="fa-solid fa-caret-down"></i>
+              <ul class="down-links">
+                <li class="sub-nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="sub-nav-item"><a href="#" class="nav-link">Our Team</a></li>
+              </ul>
             </div>
-            <div
-              data-w-id="75a7470d-2054-88ad-e9bc-e53c9e485c71"
-              class="dropdowncontainer"
-            >
-              <div class="dropdown-list">
-                <div class="dropdown-innerlist">
-                  <a href="#" class="navlink sub w-nav-link">Our team</a
-                  ><a href="#" class="navlink sub w-nav-link">Our history</a>
-                </div>
+          </li>
+          <li class="nav-item">
+            <div class="drop-down">
+              <div class="title">Services</div>
+              <i class="fa-solid fa-caret-down"></i>
+              <ul class="down-links">
+                <li class="sub-nav-item"><a href="#" class="nav-link">Consulting</a></li>
+                <li class="sub-nav-item"><a href="#" class="nav-link">Support</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Small Screen Nav -->
+      <nav class="small-screen">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <div class="drop-down">
+              <div class="drop-element">
+                <div class="title">Categories</div>
+                <i class="fa-solid fa-caret-down"></i>
               </div>
+              <ul class="down-links-small">
+                <li class="sub-nav-item"><a href="#" class="nav-link">About Us</a></li>
+                <li class="sub-nav-item"><a href="#" class="nav-link">Our Team</a></li>
+              </ul>
             </div>
-          </div>
-          <div
-            data-w-id="75a7470d-2054-88ad-e9bc-e53c9e485c5d"
-            class="dropdownwrapper"
-          >
-            <div class="dropdownlink-container">
-              <div class="navlink">News</div>
-              <div class="down"><i class="fas fa-chevron-down"></i></div>
-            </div>
-            <div
-              data-w-id="75a7470d-2054-88ad-e9bc-e53c9e485c63"
-              class="dropdowncontainer"
-            >
-              <div class="dropdown-list w-dyn-list">
-                <div role="list" class="dropdown-innerlist w-dyn-items">
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link"
-                      >Amazing Article</a
-                    >
-                  </div>
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link">Cool Article</a>
-                  </div>
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link"
-                      >Interesting Article</a
-                    >
-                  </div>
-                </div>
+          </li>
+          <li class="nav-item">
+            <div class="drop-down">
+              <div class="drop-element">
+                <div class="title">Services</div>
+                <i class="fa-solid fa-caret-down"></i>
               </div>
+              <ul class="down-links-small">
+                <li class="sub-nav-item"><a href="#" class="nav-link">Consulting</a></li>
+                <li class="sub-nav-item"><a href="#" class="nav-link">Support</a></li>
+              </ul>
             </div>
-          </div>
-          <div
-            data-w-id="24cd17a1-8f15-3c68-96fa-f65b0a0dc62f"
-            class="dropdownwrapper"
-          >
-            <div class="dropdownlink-container">
-              <div class="navlink">Products</div>
-              <div class="down"><i class="fas fa-chevron-down"></i></div>
-            </div>
-            <div
-              data-w-id="24cd17a1-8f15-3c68-96fa-f65b0a0dc635"
-              class="dropdowncontainer"
-            >
-              <div class="dropdown-list w-dyn-list">
-                <div role="list" class="dropdown-innerlist w-dyn-items">
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link">Cheap Product</a>
-                  </div>
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link">Cool Product</a>
-                  </div>
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link"
-                      >Innovative Product</a
-                    >
-                  </div>
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link"
-                      >Mind blowing Product</a
-                    >
-                  </div>
-                  <div role="listitem" class="collection-item-9 w-dyn-item">
-                    <a href="#" class="navlink sub w-nav-link"
-                      >Useful Product</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="navlink w-nav-link">Contact</a>
-        </nav>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </div>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+</body>
+<script src="./js/main.js"></script>
 </html>
