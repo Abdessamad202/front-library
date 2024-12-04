@@ -13,7 +13,7 @@ dropDivs.forEach((dropDiv, index) => {
   });
 });
 // Select all dropdowns
-const dropdownItems = document.querySelectorAll(".small-screen .nav-item .drop-down");
+const dropdownItems = document.querySelectorAll(".small-screen .Nav-item .drop-down");
 
 // Loop through each dropdown to add click event
 dropdownItems.forEach((dropdown) => {
@@ -22,6 +22,14 @@ dropdownItems.forEach((dropdown) => {
 
   trigger.addEventListener("click", () => {
     // Toggle the 'expanded' class to open/close the dropdown
+    trigger.querySelector(".fa-caret-down").classList.toggle("rotate");
     downLinks.classList.toggle("expanded");
   });
+});
+
+const menuIcon = document.querySelector(".menu-icon");
+const NavMenu = document.querySelector(".small-screen .Nav-menu");
+
+menuIcon.addEventListener("click", () => {
+  NavMenu.classList.toggle("expanded");
 });
